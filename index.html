@@ -17,9 +17,11 @@
       background: #0f0f0f;
       color: #f0f0f0;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 2rem;
       text-align: center;
     }
 
@@ -78,32 +80,19 @@
     .faq-item strong {
       color: #ddd;
     }
+
+    iframe {
+      margin-top: 3rem;
+      width: 100%;
+      max-width: 800px;
+      height: 600px;
+      border: 1px solid #444;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>fmod.dev</h1>
-    <p>saving Domain enjoy fmod :3</p>
-    
-    <div class="btn-group">
-      <a class="btn" href="https://discord.gg/b5MqZAUewB" target="_blank">Join FMOD</a>
-    </div>
-
-    <div class="faq">
-      <h2>asked questions</h2>
-      <div class="faq-item">
-        <strong>how did you get fmod.dev?</strong>
-        <p>i paid for it 😎</p>
-      </div>
-      <div class="faq-item">
-        <strong>are you keeping it?</strong>
-        <p>nah just holding it so it doesn't get sniped by bots</p>
-      </div>
-      <div class="faq-item">
-        <strong>milxnor can get it back?</strong>
-        <p>yep. just dm me</p>
-      </div>
-    </div>
+    <iframe src="https://auth.fmod.dev" title="Auth FMOD"></iframe>
   </div>
 </body>
 </html>
